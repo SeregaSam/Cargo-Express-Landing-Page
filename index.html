@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CargoExpress</title>
+    <link rel="shortcut icon" href="src/logo/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+            <a href="#slider" class="navbar-brend">
+                <img src="src/logo/LogoIcon.svg" height="40" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler toggler-styles" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link link-transition">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ask" class="nav-link link-transition">Задать вопрос</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link link-transition">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#doc" class="nav-link link-transition">Документы</a>
+                    </li>
+                    <button class="btn btn-outline-primary nav-button link-style" data-toggle="modal" data-target="#bidModal">
+                        Подать заявку
+                    </button>
+                </ul>
+                <ul class="navbar-nav flex-row ml-md-auto d-md-flex" id="second">
+                  <li class="nav-item">
+                    <a href="mailto:" class="nav-link link-transition text-center"><i class="far fa-envelope"></i> info@cargo-express.net</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tel:+7(495)9255535" class="nav-link link-transition text-center"><i class="fas fa-phone"></i> +7 (495) 925-55-35</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link link-transition">
+                      <i class="fab fa-vk"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item ml-1">
+                    <a href="" class="nav-link link-transition">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item ml-1">
+                    <a href="" class="nav-link link-transition">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    <!--  Navbar  -->
+    <!-- Slider -->
+        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="2500">
+          <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+            <li data-target="#slider" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active slider-1">
+              <div class="carousel-caption d-none d-md-block caption-position">
+                  <p>Авто, авиа и ж/д перевозки грузов по всему Миру</p>
+              </div>
+              <img src="src/slider/slider-1.jpg"  class="d-block w-100">
+            </div>
+            <div class="carousel-item slider-2">
+              <div class="carousel-caption d-none d-md-block caption-position">
+                  <p>Более 25-и лет на рынке грузоперевозок</p>
+              </div>
+              <img src="src/slider/slider-2.jpg"  class="d-block w-100">
+            </div>
+            <div class="carousel-item slider-3">
+              <div class="carousel-caption d-none d-md-block caption-position">
+                  <p>Автодоставка грузов за одну ночь между Москвой и Санкт-Петербургом</p>
+              </div>
+              <img src="src/slider/slider-3.jpg"  class="d-block w-100">
+            </div>
+            <div class="carousel-item slider-4">
+              <div class="carousel-caption d-none d-md-block caption-position">
+                <p>Внимательное отношение к Вам и бережное к Вашим грузам</p>
+              </div>
+              <img src="src/slider/slider-4.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="color: #f7ce3e;"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div id="endSlider"></div>
+        </div>
+    <!-- Slider -->
+    <!-- NavSlider -->
+
+
+  <!--  About text -->
+  <section class="container-fluid mt-3 aboutSection" id="about">
+    <div class="pt-4 pb-3">
+      <h2 class="h1 m-0 mobileAbout">Причины работать с нами</h2>
+      <div class="row">
+        <div class="col-md-4 ">
+
+              <div class="media pt-5 pb-5">
+                <img class="mr-0" src="src/About/stable.svg" alt="Generic placeholder image" height="128" width="128">
+                <div class="media-body">
+                  Компания «КАРГО-ЭКСПРЕСС» была создана в 1992 году, и сегодня является стабильной транспортной компаний,
+                    занимающейся перевозкой грузов на территории РФ.
+                </div>
+              </div>
+
+              <div class="media pt-5 pb-5">
+                <img class="mr-0" src="src/About/truck.svg" alt="Generic placeholder image" height="128" width="128">
+                <div class="media-body">
+                  В арсенале ООО «КАРГО-ЭКСПРЕСС» находится «разнокалиберный», оснащённый системой отслеживания,
+                     автомобильный транспорт различной грузоподъёмности, с гидролифтами и без, с боковой и задней загрузкой.
+                </div>
+              </div>
+
+              <div class="media pt-5 pb-5">
+                <img class="mr-0" src="src/About/fast.svg" alt="Generic placeholder image" height="128" width="128">
+                <div class="media-body">
+                  Отличительная особенность ООО «КАРГО-ЭКСПРЕСС» - доставка груза между двумя столицами через ночь.
+                </div>
+              </div>
+
+
+        </div>
+        <div class="col-md-4 mt-1 pb-5 pt-5 align-self-center circleBlockWrap">
+
+
+
+          <div class="circleBlock text-center ">
+
+            <video autoplay muted loop id="myVideo">
+              <source src="src/wowPlane.webm" type="video/mp4" muted autoplay loop>
+            </video>
+
+            <div class="circleBlock_in align-self-center">
+              <div>
+                <h1>6</h1>
+                <p>Причин работать с нами</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 ">
+          <div class="media pt-5 pb-5">
+
+            <img class="mr-0 mobileNumber" src="src/About/reputation.svg" alt="Generic placeholder image" height="128" width="128">
+
+            <div class="media-body text-left">
+              Мы дорожим завоёванной репутацией, и оказываем только качественные транспортно-экспедиторские услуги.
+                 Нас рекомендуют клиенты своим друзьям, клиентам, партнёрам.
+            </div>
+            <img class="ml-0 desktopNumber" src="src/About/reputation.svg" alt="Generic placeholder image" height="128" width="128">
+          </div>
+          <div class="media pt-5 pb-5">
+
+            <img class="mr-0 mobileNumber" src="src/About/partnership.svg" alt="Generic placeholder image" height="128" width="128">
+
+            <div class="media-body">
+              Услугами «КАРГО-ЭКСПРЕСС» успешно пользовались и пользуются крупные профильные и дистрибьюторские компании,
+               различные ФГУП, Посольства, НИИ, футбольные и хоккейные клубы.
+            </div>
+
+            <img class="ml-0 desktopNumber" src="src/About/partnership.svg" alt="Generic placeholder image" height="128" width="128">
+          </div>
+          <div class="media pt-5 pb-5">
+
+            <img class="mr-0 mobileNumber" src="src/About/reliability.svg" alt="Generic placeholder image" height="128" width="128">
+
+            <div class="media-body">
+              Многолетний опыт на рынке транспортно-экспедиторских услуг позволяет нам гарантировать чёткость,
+                надёжность и соблюдение сроков при оказании таких услуг в соответствие с нормами и требованиями
+                 законодательства РФ.
+            </div>
+            <img class="ml-0 desktopNumber" src="src/About/reliability.svg" alt="Generic placeholder image" height="128" width="128">
+
+          </div>
+
+        </div>
+       </div>
+    </div>
+
+
+  </section>
+  <!--  About text END -->
+
+
+
+
+
+
+
+<!-- <div id="contacts"></div> -->
+    <!-- Contact -->
+<section class="container-fluid bg-light pb-4 pt-4">
+  <div class="container">
+    <div id="contacts"></div>
+    <!--Contact heading-->
+    <h2 class="h1 m-0 pb-4">Контакты</h2>
+
+
+
+    <div class="container-fluid contacts_slider">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner row w-100 mx-auto contact-slider-inner">
+          <div class="carousel-item col-md-4 active contact-slider-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Москва "Общие контакты"</p>
+                  <p class="card-text">ИНН 7723831352<br>
+                  <p>Юридический адрес: 109651, г. Москва, ул. Иловайская, д. 3, стр. 18</p>
+                  <p>Фактический адрес: 109651, г. Москва, ул. Иловайская, д. 3, стр. 7</p>
+                  <p>Почтовый адрес: 109651, г. Москва, а/я 48</p>
+                  Телефон: <a href="tel:+7(495)9255535">+7 (495) 925-55-35</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4  contact-slider-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Склад «Юг»</p>
+                  <p class="card-text">
+                  <p>Адрес: г. Москва, ул. Иловайская, д. 3, стр. 18</p>
+                  <p>Часы работы: Будни 9.00 - 18.00</p>
+                  <p>Приём и выдача крупногабаритного груза 11.00 - 18.00</p>
+                  <p>Суббота и воскресенье - выходной</p>
+                  <p>Телефон: <a href="tel:+7(495)9255535">+7 (495) 925-55-35</a></p>
+                  <a href="mailto:smsk@klad@cargo-express.net">klad@cargo-express.net</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4  contact-slider-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Склад «Север»</p>
+                  <p class="card-text">
+                  <p>Адрес: г. Москва, ул. Вагоноремонтная, 23</p>
+                  <p>Часы работы: Будни 9.00 - 18.00</p>
+                  <p>Приём и выдача крупногабаритного груза 11.00 - 18.00</p>
+                  <p>Суббота и воскресенье - выходной</p>
+                  <p>Телефон: <a href="tel:+7(495)6385631">+7 (495) 638-56-31</a> </p>
+                  <a href="mailto:step-igor@cargo-express.net">step-igor@cargo-express.net</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4  contact-slider-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Санкт-Петербург</p>
+                  <p class="card-text">
+                  <p>ИНН 7810610568</p>
+                  <p>Адрес: 196210, г. Санкт-Петербург,ул. Штурманская 3/5</p>
+                  <p>Телефон: <a href="tel:+7(812)3268080">+7 (812) 326-80-80</a> </p>
+                  <a href="mailto:moscow@cargo-express.ru">moscow@cargo-express.ru</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4 contact-slider-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Иркутск</p>
+                  <p class="card-text">
+                  <p>ИНН  3811119475</p>
+                  <p>Адрес: 664050, г. Иркутск, ул. Байкальская, д. 291/2</p>
+                  <p>Телефон:<a href="tel:+7(3952)482167"> +7 (3952) 48-21-67</a></p>
+                  <a href="mailto:vp.cargo-ex@mail.ru">svp.cargo-ex@mail.ru</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <i class="fas fa-chevron-left" style="color:black"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <i class="fas fa-chevron-right" style="color:black"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="row mt-5 contacts-list">
+
+        <div class="col-md">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Автомобильная перевозка сборных грузов по маршруту Москва - Санкт-Петербург – Москва</strong>
+              </address>
+              <address>
+                Александр Акульшин<br>
+                <strong>тел.:</strong><a href="tel:+7(495)9255535"> +7 (495) 925-55-35</a> доб. 102<br>
+                <a href="mailto:smsk@cargo-express.net">msk@cargo-express.net</a>
+              </address>
+            </li>
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Доставка грузов по России отдельной машиной</strong>
+              </address>
+              <address>
+                Борис Погосбекян<br>
+                <strong>тел.:</strong><a href="tel:+7(495)9255535">+7 (495) 925-55-35</a> доб. 121<br>
+                <a href="mailto:pbl@cargo-express.net ">pbl@cargo-express.net </a>
+              </address>
+            </li>
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Авиационные перевозки по России</strong>
+              </address>
+              <address>
+                Олег Кравчук <br>
+                <strong>тел.:</strong><a href="tel:7(495)9255535"> 7 (495) 925-55-35</a> доб. 105<br>
+                <a href="mailto:region@cargo-express.net ">region@cargo-express.net </a>
+              </address>
+            </li>
+          </ul>
+          </div>
+          <div class="col-md">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Автомобильные перевозки по России и странам таможенного союза</strong>
+              </address>
+              <address>
+                Евгений Никулин<br>
+                <strong>тел.:</strong> <a href="tel:+7(495)9255535">+7 (495) 925-55-35</a> доб. 120<br>
+                <a href="mailto:nea@cargo-express.net ">nea@cargo-express.net </a>
+              </address>
+            </li>
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Экспресс доставка документов и малогабаритных грузов по всему миру</strong>
+              </address>
+              <address>
+                Евгений Никулин<br>
+                <strong>тел.:</strong> <a href="+7(495)9255535">+7 (495) 925-55-35</a> доб. 120<br>
+                <a href="mailto:docs@cargo-express.net  ">docs@cargo-express.net  </a>
+              </address>
+            </li>
+            <li class="list-group-item bg-light">
+              <address>
+                <strong>Международная доставка грузов</strong>
+              </address>
+              <address>
+                Александра Чагина<br>
+                <strong>тел.:</strong> <a href="tel:+7(495)1206669">+7 (495) 120-66-69</a><br>
+                <a href="mailto:sales@msk.cargo-express.ru ">sales@msk.cargo-express.ru  </a>
+              </address>
+            </li>
+          </ul>
+        </div>
+
+  </div>
+
+
+
+
+  <div id="doc"></div>
+  </div>
+
+</section>
+<!-- Contact -->
+
+<!-- Documents -->
+<section class="pb-4 pt-2" style="box-shadow: 0px 15px 15px rgba(0,0,0,0.3);">
+  <div class="container">
+    <div class="row mb-2">
+
+      <div class="col-md-6 mt-4">
+        <h2 class="h1 m-0 pb-4">Тарифы</h2>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Aвтомобильная доставка через одну ночь Москва - Санкт-Петербург (Санкт-Петербург - Москва)
+            <span class="badge  badge-pill">
+              <a class="btn btn-outline-primary download" href="files/rates/1_moscow_pt.xlsx" target="_blank">Скачать</a>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Перевозка по Москве и Московской области (отдельная машина)
+            <span class="badge  badge-pill">
+              <a  class="btn btn-outline-primary download" href="files/rates/2_mos_mo.xls" target="_blank">Скачать</a>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Экспресс доставка документов и малогабаритных грузов (до 25 кг) по России
+            <span class="badge  badge-pill">
+              <a  class="btn btn-outline-primary download" href="files/rates/3_express_rus.xlsx" target="_blank">Скачать</a>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Cтрахование перевозки груза
+            <span class="badge  badge-pill">
+              <a  class="btn btn-outline-primary download" href="files/rates/4_resist.xlsx" target="_blank">Скачать</a>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Услуги склада на хранение и обработку грузов
+            <span class="badge  badge-pill">
+              <a  class="btn btn-outline-primary download" href="files/rates/5_stock.xls" target="_blank">Скачать</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    <div class="col-md-6 mt-4">
+      <h2 class="h1 m-0 pb-4">Документы</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Договор транспортной экспедиции
+          <span class="badge  badge-pill">
+            <a class="btn btn-outline-primary download" href="files/docs/Договор_транспортной_экспедиции.doc" target="_blank">Скачать</a>
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Правила для юридических лиц
+          <span class="badge  badge-pill">
+            <a  class="btn btn-outline-primary download" href="files/docs/Правила_для_юредических.pdf" target="_blank">Скачать</a>
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Правила для физических лиц
+          <span class="badge  badge-pill">
+            <a  class="btn btn-outline-primary download" href="files/docs/Правила_отправки_грузов_для_физических_лиц.pdf" target="_blank">Скачать</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+  </div>
+</section>
+<!-- END of Documents -->
+
+<!--  Дубликат подачи заявки -->
+<div class="modal fade bd-example-modal-lg" id="bidModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+
+<section class="container-fluid bg-light pb-4 pt-4">
+  <div class="container-fluid">
+    <h2 class="h1 m-0 pb-4">Подать заявку</h2>
+    <div class="col-md-12  text-center">
+
+      <form>
+        <div class="form-group col-md-5 pl-0">
+          <select id="what_face" class="form-control">
+            <option value="Юридическое лицо">Юридическое лицо</option>
+            <option value="Физическое лицо">Физическое лицо</option>
+          </select>
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Основная услуга</label>
+            <select class="form-control" id="mainUsluga">
+              <option value="Авто-сборная">Авто-сборная</option>
+              <option value="По городу">По городу</option>
+              <option value="Отдельная машина">Отдельная машина</option>
+              <option value="Авиа">Авиа</option>
+              <option value="Ж/Д">Ж/Д</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Варианты перевозки</label>
+            <select class="form-control" id="transVar">
+              <option value="Дверь - дверь">Дверь - дверь</option>
+              <option value="Дверь - склад">Дверь - склад</option>
+              <option value="Склад - дверь">Склад - дверь</option>
+              <option value="Склад - склад">Склад - склад</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Место оплаты</label>
+            <select class="form-control" id="payPlace">
+              <option value="Оплата в г.Москва">Оплата в г.Москва</option>
+              <option value="Оплата в г. Санкт-Петербурге">Оплата в г. Санкт-Петербурге</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect1">Вид платежа</label>
+            <select class="form-control" id="payVar">
+              <option value="нал">нал</option>
+              <option value="б/н">б/н</option>
+            </select>
+          </div>
+
+        </div>
+
+
+
+        <h2 class="h3 m-0 pb-4">Плательщик</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="PayerName" aria-describedby="emailHelp" placeholder="Полное название компании">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="PayerINNorPass" placeholder="ИНН">
+            </div>
+
+            <div class="form-group col-md-6 PayerPass">
+              <input type="text" class="form-control" id="PayerPass" placeholder="Тип документа, серия и номер">
+            </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6 ">
+            <input type="text" class="form-control" id="PayerCPP" placeholder="КПП">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="PayerUrAddress" placeholder="Юр. Адрес, город">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="PayerAddress" placeholder="улица, дом, корпус, офис">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="PayerContactFace" placeholder="Контактное лицо">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="PayerContactPhone" placeholder="Телефон">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="email" class="form-control" id="PayerContactEmail" placeholder="Email">
+            </div>
+        </div>
+
+        <h2 class="h3 m-0 pb-4">Отправитель</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="SendCompanyName" placeholder="Название компании">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="SendCompanyINN" placeholder="ИНН">
+            </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-10">
+            <input type="text" class="form-control" id="SendCompanyDocNum" placeholder="Номер документа для получения отгруза">
+          </div>
+        </div>
+
+
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendDate" placeholder="Дата отправки">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendWorkTime" placeholder="время работы,обеда">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendTime" placeholder="Время отправки груза">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="SendAddress" placeholder="Адрес отправки">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="SendAddressStreet" placeholder="Улица">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendAddressHouse" placeholder="дом, корпус, офис">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendContactFace1" placeholder="Контактное лицо">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendContactFacePhone1" placeholder="телефон">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 offset-md-4 ">
+              <input type="text" class="form-control" id="SendContactFace2" placeholder="Контактное лицо">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="SendContactFacePhone2" placeholder="телефон">
+            </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="SenderComment" placeholder="Примечание отправителя">
+        </div>
+
+        <h2 class="h3 m-0 pb-4">Получатель</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="GetCompanyName" placeholder="Название компании">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="GetCompanyINN" placeholder="ИНН">
+            </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-10">
+            <input type="text" class="form-control" id="GetCompanyDocNum" placeholder="Номер документа для получения отгруза">
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="GetAddress" placeholder="Адрес доставки, город">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="GetAddressStreet" placeholder="Улица">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="GetAddressHouse" placeholder="дом, корпус, офис">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="GetContactFace1" placeholder="Контактное лицо">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="GetContactFacePhone1" placeholder="телефон">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 offset-md-4 ">
+              <input type="text" class="form-control" id="GetContactFace2" placeholder="Контактное лицо">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="GetContactFacePhone2" placeholder="телефон">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="GetTime" placeholder="Время доставки груза">
+            </div>
+            <div class="form-group col-md-4 offset-md-4">
+              <input type="text" class="form-control" id="GetWorkTime" placeholder="Время работы, обеда">
+            </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="GetterComment" placeholder="Примечание получателя">
+        </div>
+
+        <h2 class="h3 m-0 pb-4">Данные о грузе</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxMesto" placeholder="Кол-во мест">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxWeight" placeholder="Общий вес, кг">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxSquare" placeholder="Объем куб.м">
+            </div>
+        </div>
+        <label>Габариты наибольшего места (если одна из столор более 1м):</label>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxX" placeholder="Длина">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxY" placeholder="Ширина">
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="BoxZ" placeholder="Высота">
+            </div>
+        </div>
+
+        <div class="form-group pl-0">
+          <input type="text" class="form-control" id="BoxHaracter" placeholder="Характер груза">
+        </div>
+        <div class="form-group pl-0">
+          <textarea type="text" class="form-control" id="BoxComment" placeholder="Комментарии к грузу" rows='2'></textarea>
+        </div>
+
+
+        <h2 class="h3 m-0 pb-4">Платные доп. услуги</h2>
+
+        <div class="form-row">
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="BoxSave">
+              <label class="form-check-label" for="BoxSave">Страхование груза</label>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="BoxWeight" placeholder="Страховая стоимость груза, руб.">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="DocsBack">
+              <label class="form-check-label" for="DocsBack">Возврат документов</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="SendPRR">
+              <label class="form-check-label" for="SendPRR">ПРР при отправлении</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="GetPRR">
+              <label class="form-check-label" for="GetPRR">ПРР при доставке</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="Hidrolift">
+              <label class="form-check-label" for="Hidrolift">Гидролифт</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="WoodObr">
+              <label class="form-check-label" for="WoodObr">Деревянная обрешка</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="Pack">
+              <label class="form-check-label" for="Pack">Упаковка</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="Pallet">
+              <label class="form-check-label" for="Pallet">Паллетирование</label>
+            </div>
+            <div class="form-group form-check col-md-3">
+              <input type="checkbox" class="form-check-input" id="OutOfNormTime">
+              <label class="form-check-label" for="OutOfNormTime">Сверхнормативное хранение(более 2-х суток)</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group form-check col-md-6">
+              <input type="checkbox" class="form-check-input" id="WeekendWork">
+              <label class="form-check-label" for="WeekendWork">Отправление/доставка груза в выходные и праздничные дни</label>
+            </div>
+            <div class="form-group form-check col-md-6">
+              <input type="checkbox" class="form-check-input" id="LateWork">
+              <label class="form-check-label" for="LateWork">Отправление/доставка груза до 09.00 / после 18.00</label>
+            </div>
+        </div>
+
+
+        <div class="form-group pt-2">
+          <input type="text" class="form-control" id="FIOmainface" placeholder="ФИО ответственного лица, подавшего заявку">
+        </div>
+
+
+
+
+
+
+        <div class="text-right">
+          <a id="sendZayavka" class="btn btn-primary" style="color:white">Отправить</a>
+        </div>
+    </form>
+
+    </div>
+  </div>
+</section>
+
+
+  </div>
+ </div>
+</div>
+<!--  END OF Дубликат подачи заявки -->
+
+<!-- -->
+<div class="modal fade bd-example-modal-sm"  id="allOK" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+        <div class="modal-body text-center">
+         <h5>Ваше сообщение отправлено!</h5>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success " data-dismiss="modal">Отлично</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  FeedBack -->
+<section class="feedback" id="ask">
+  <div class="feedback-parallax" data-parallax="scroll" data-image-src="./src/feedback.jpg" data-speed="0.4">
+
+  <div class="container pt-5 pb-5">
+
+    <div class="row">
+     <div class="col-md-6 offset-md-3 text-center">
+
+      <h2 class="h1 m-0 pb-4">Обратная связь</h2>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="Name"  placeholder="Ваше имя*">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="Email" placeholder="Email*">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="Phone" aria-describedby="emailHelp" placeholder="Телефон*">
+          </div>
+          <div class="form-group">
+             <textarea class="form-control" id="message" rows="3" placeholder="Сообщение*"></textarea>
+          </div>
+          <button id="send_mail_button" type="button" class="btn main_color_yellow_botton">Задать вопрос</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--  FeedBack -->
+
+
+<a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" title="Нажмите для перехода на верх страницы" data-toggle="tooltip" data-placement="left"><img src="src/up/up-arrow.svg"></a>
+
+
+    <footer class="footer pt-4" style="box-shadow: 0px 0px 15px rgba(0,0,0,1);">
+       <span id="year"></span> CargoExpress © Created by <a href="http://lilweb.ru">LilWeb</a>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
